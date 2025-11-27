@@ -2,8 +2,9 @@ name: Availability Mumbai
 
 on:
   schedule:
-    - cron: '0 */2 * * *'   # Runs every 2 hours
+    - cron: '30 3-11 * * 1-6'   # Mon–Sat, 09:00–17:00 IST
   workflow_dispatch:
+
 
 jobs:
   run-script:
